@@ -1,32 +1,31 @@
 :root {
-  --text-main-color: #000000;
-  --text-second-color: #907e82;
-  --text-third-color: #ffa5ba;
-  --text-fourth-color: #ffffff;
+  --background-white-color: #ffffff;
+  --background-pink-color: #ffb8ca;
+  --background-light-pink-color: #fff5f6;
+  --background-customers-color: #fafafa;
+  --background-menu-pink-color:  #E17992;
 
-  --bgc-main: #ffffff;
-  --bgc-second: #fff5f6;
-  --bgc-third: #ffb8ca;
-  --bgc-fourth: #f0d1a5;
-  --bgc-fifth: #c2e297;
-  --bgc-mobile: #e17992;
-
+  --white-color: #ffffff;
   --accent-color: #d41443;
+  --pink-color: #ffa5ba;
 
-  --button-main-hover-color: #ecebeb;
-  --button-second-hover-color: #c7133e;
+  --black-text-color: #000000;
+  --grey-text-color: #907e82;
 
-  --hero-circle-color: #ffa5ba;
-  --figure-line-color: #e1e1e1;
-  --social-icon-bgc: #fea5bb;
-  --box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  --mobile-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
+  --button-accent: #d41443;
+  --button-white: #ffffff;
+  --button-accent-hover: #c7133e;
+  --button-white-hover: #ecebeb;
 
-  --slider-bgc: #fafafa;
-  --slider-hover: #c7133e;
-  --slider-dots: #d9d9d9;
-  --slider-dots-hover: #d31342;
+  --card-text-pink-bgc: #ffb8ca;
+  --card-text-yellow-bgc: #f0d1a5;
+  --card-text-green-bgc: #c2e297;
 
-  --transition-time: 300ms;
-  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --border-color: #e1e1e1;
+
+  --svg-footer-fill: #fea5bb;
+
+  --transition-duration: 300ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --backdrop-bg-color: rgba(0, 0, 0, 0.35);
 }

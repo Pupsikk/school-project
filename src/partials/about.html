@@ -1,85 +1,102 @@
-<section class="section__about" id="about">
-  <div class="container container__about">
-    <p class="about__title">tradition and love</p>
-    <h2 class="about__name">how it’s made?</h2>
-    <div class="about__blocks">
-      <div class="about__picture">
+<section class="section section--pink section-about">
+  <div class="about-image">
+    <picture class="about-background">
+      <source
+        srcset="images/leftsplash-320.png 1x, images/leftsplash-320-@2x.png 2x"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          images/leftsplash-1200.png     1x,
+          images/leftsplash-1200-@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <img
+        src="images/leftsplash-320.png"
+        alt="Опис зображення для всіх версій"
+      />
+    </picture>
+    <picture class="about-background">
+      <source
+        srcset="
+          images/rightsplash-320.png     1x,
+          images/rightsplash-320-@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          images/rightsplash-1200.png     1x,
+          images/rightsplash-1200-@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <img
+        src="images/rightsplash-320.png"
+        alt="Опис зображення для всіх версій"
+      />
+    </picture>
+  </div>
+  <div class="container">
+    <div class="about-title">
+      <p class="label-title" id="how_it_made">tradition and love</p>
+      <h2 class="section__title section__title--about">how it’s made?</h2>
+    </div>
+    <div class="article-about">
+      <div class="thumb-image-cow">
         <picture>
           <source
             srcset="
-              ./images/about/cow_lg.png    1x,
-              ./images/about/cow_lg@2x.png 2x
+              images/home-pic4-1200.png     1x,
+              images/home-pic4-1200-@2x.png 2x
             "
             media="(min-width:1280px)"
-            type="image/png"
           />
+
+          <source
+            srcset="images/home-pic4-768.png 1x, images/home-pic4-768@2x.png 2x"
+            media="(min-width:768px)"
+          />
+
           <source
             srcset="
-              ./images/about/cow_md.png    1x,
-              ./images/about/cow_md@2x.png 2x
+              images/home-pic4-320.png     1x,
+              images/home-pic4-320-@2x.png 2x
             "
-            media="(min-width:768px)"
-            type="image/png"
+            media="(min-width:320px)"
           />
-          <source
-            srcset="./images/about/cow_sm@2x.png 2x"
-            media="(max-width:767px)"
-            type="image/png"
-          />
-          <img src="./images/about/cow_sm.png" alt="com_picture" />
+          <img src="images/home-pic4-320.png" alt="Cow photo" />
         </picture>
       </div>
-      <div class="about__block">
-        <div class="about__info">
-          <p class="about__txt">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </p>
-          <p class="about__desc about__desc--one">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-            massa nibh, <br />tincidunt.
-          </p>
-
-          <p class="about__desc about__desc--second">
-            Aliquam erat volutpat. Aenean accumsan.
-          </p>
-        </div>
-        <button class="about__btn" type="button">
+      <div class="about-post">
+        <p class="about-post__text about-post__text--black">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about-post__text about-post__text--gray">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p
+          class="about-post__text about-post__text--gray about-post__text--no-mobile"
+        >
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button
+          type="button"
+          class="button--white button--about"
+          data-read-more-modal-open
+        >
           Read more
+          <svg class="icon-vector-1" width="7" height="10">
+            <use href="images/sprite.svg#vector-1"></use>
+          </svg>
         </button>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Modal -->
-
-<div class="about__backdrop is-hidden">
-  <div class="about__modal">
-    <p class="about__txt">
-      Ice cream contains nutrients that are good for your immune system. There
-      are nutrients in ice cream that can boost your immune system. Ice cream is
-      made with milk, which is full of vitamins and nutrients like vitamin A,
-      vitamin D, selenium, and zinc which are all vital for a healthy immune
-      system.
-    </p>
-    <form class="about__form">
-      <p class="about__title">
-        Leave your contact-mail and we'll send you discount coupon
-      </p>
-      <div class="about__form__field">
-        <label class="about__text" for="email">E-mail :</label>
-        <input
-          class="about__form__input"
-          type="email"
-          name="email"
-          id="email"
-        />
-      </div>
-    </form>
-    <button class="about__form__btn">Close</button>
-  </div>
-</div>

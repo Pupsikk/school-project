@@ -1,35 +1,49 @@
-.button {
-  padding: 7px 13px;
+.button--pink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  @include font-size(8, 10);
-
-  background-color: var(--bgc-main);
-  color: var(--accent-color);
-  border: none;
+  min-height: 44px;
+  background-color: var(--button-accent);
   border-radius: 22px;
+  border-color: transparent;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white-color);
 
-  transition: background-color 200ms var(--transition-function),
-    transform 200ms var(--transition-function);
+  cursor: pointer;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
 
   &:hover,
   &:focus {
-    transform: translateY(-3px);
-    background-color: var(--button-main-hover-color);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--button-accent-hover);
   }
+}
 
-  &:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
+.button--white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &--dark {
-    color: var(--text-fourth-color);
-    background-color: var(--accent-color);
+  min-height: 44px;
+  background-color: var(--button-white);
+  border-radius: 22px;
+  border-color: transparent;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--button-accent);
 
-    &:hover,
-    &:focus {
-      background-color: var(--button-second-hover-color);
-    }
+  cursor: pointer;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-white-hover);
   }
 }

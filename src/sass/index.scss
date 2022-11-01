@@ -1,25 +1,24 @@
-// резет
-@import './reset/reset';
-// Cтандартные кнопки и контейнер
-@import './default-style/default-button';
-@import './default-style/default-container';
+@import './utils/variables';
+@import './utils/hidden';
 
-// рутт
-@import './default-style/root';
-// Skroll
-@import './default-style/skroll';
+@import './base/common';
+@import './base/reset';
 
-// нормалайз
-@import './common';
-// дерево
-@import './header';
-@import './section-hero';
-@import './products';
-@import './about';
-@import './advantages';
-@import './gallery';
-@import './customer-reviews';
-@import './contacts';
-@import './footer';
-@import './modal';
+@import './components/container';
+@import './components/section';
+@import './components/button';
+@import './components/button-anchor';
+@import './components/mobil-menu';
+@import './components/modal';
+@import './components/_read-more-modal';
+@import './components/location-modal';
+@import './components/franchise-modal';
 
+@import './layout/header-hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';

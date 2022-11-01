@@ -1,0 +1,134 @@
+.menu-open-btn {
+  margin-left: auto;
+  fill: var(--white-color);
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &:hover{
+    cursor: pointer;
+
+    fill: var(--button-white-hover);
+}
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: none;
+
+  transition-property: fill, border-color, transform;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing);
+  fill: var(--white-color);
+  
+  &:hover{
+      cursor: pointer;
+
+      fill: var(--button-white-hover);
+      transform: scale(1.15);
+
+  }
+}
+
+.mobile__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 6;
+
+  height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-menu-pink-color);
+
+  transform: translateX(0);
+
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 767px) {
+    width: 60vw;
+
+  }
+  @media screen and (min-width: 768px) {
+    width: 40vw;
+  }
+}
+
+
+.is-hidden {
+  transform: translateX(100%);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.mobile__button-menu {
+  padding-left: 40px;
+  padding-right: 30px;
+  margin-bottom: 19px;
+
+  width: 160px;
+  height: 44px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 209px;
+  }
+}
+
+.mobile__button__menu__svg {
+  margin-left: 10px;
+}
+
+.mobile__menu__list {
+  color: var(--white-color);
+  transition: color 300ms linear;
+  padding: 12px;
+  &:hover,
+  &:focus {
+    color: var(--button-accent);
+  }
+}
+
+.mobile__menu__nav__item {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #fff;
+  transition: color 0.3s linear;
+
+  padding-left: 21px;
+  padding-right: 21px;
+  border-top: 1px solid #e18298;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
