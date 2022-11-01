@@ -1,65 +1,83 @@
-<header id="header" class="header">
-    <div class="container header__container">
-        <a class="logo" href="#!">
-            <img srcset="./images/header-logo/logo-x1.png 199w,
-                        ./images/header-logo/logo-x2.png 398w"
-            src="./images/header-logo/logo-x1.png" alt="Logo" width="199" height="50"
-            sizes="(min-width: 320px) 199px"/>
-        </a>
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="#header">Home</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#advantages">About us</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#about">How it’s made?</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#products">Our products</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#contacts">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header__buttons-wrap">
-            <button class="button-mobmenu js-open-btn" type="button" open-menu>
-                <svg class="button-mobmenu__icon js-open-btn" 
-                width="20" 
-                height="20"
-                aria-expanded="false" 
-                aria-label="mobile menu toggle">
-                    <use class="icon-menu js-open-btn" href="images/icons.svg#menu-button-icon"></use>
-                </svg>
-            </button>
-            <button class="button header__button js-modal-btn js-modal-btn-buy" type="button">
-                <span class="header__button-text">Buy now</span>
-                <span>
-                    <svg class="header__button-icon">
-                        <use href="images/icons.svg#vector-icon"></use>
-                    </svg>
-                </span>
-            </button>
-        </div>
+<header class="header">
+  <div class="container header__container">
+    <nav class="header-nav">
+      <a href="./index.html" class="logo">
+        <img
+          class="logo__img"
+          width="199"
+          src="./images/header/icecream.png"
+          alt="Company Logo"
+        />
+      </a>
+      <ul class="header-nav__menu">
+        <li class="header-nav__item">
+          <a href="./index.html" class="header-nav__link active">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#products" class="header-nav__link">About us</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#about" class="header-nav__link">How it&#39;s made&#63;</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#gallery" class="header-nav__link">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#contacts" class="header-nav__link">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="menu-open-btn">
+        <svg class="icon-burger" width="20" height="12">
+          <use href="./images/header/symbol-defs.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </nav>
+    <button type="button" class="header-btn" data-modal-open>
+      <span class="header-btn__text">Buy now</span>
+      <span class="header-btn__icon">
+        <svg class="icon-arrow" width="6" height="12">
+          <use href="./images/header/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </span>
+    </button>
+
+    <div class="mob-menu is-hidden">
+      <!-- <div class="mob-menu__wrap"> -->
+      <button type="button" class="menu-close-btn menu-close-btn">
+        <svg class="icon-close" width="14" height="14">
+          <use href="./images/header/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="header-btn mob-menu__header-btn menu-close"
+        data-modal-mob-open
+      >
+        <span class="header-btn__text">Buy now</span>
+        <span class="header-btn__icon">
+          <svg class="icon-arrow" width="6" height="12">
+            <use href="./images/header/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </span>
+      </button>
+      <ul class="mob-menu__list">
+        <li class="mob-menu__item">
+          <a href="./index.html" class="mob-menu__link">Home</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#products" class="mob-menu__link">About us</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#about" class="mob-menu__link">How it&#39;s made&#63;</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#gallery" class="mob-menu__link">Our products</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#contacts" class="mob-menu__link">Contact</a>
+        </li>
+      </ul>
+      <!-- </div> -->
     </div>
-    <div class="mobile-menu" mobile-menu>
-        <button class="button-close button-close--mobile mobile-menu__close-button" type="button" close-menu>
-            <svg class="button-close__icon" width="14" height="14" aria-expanded="false"
-                aria-label="mobile menu toggle">
-                <use class="icon-cross" href="images/icons.svg#close-menu-button-icon"></use>
-            </svg>
-        </button>
-        <div class="mobile-menu__button-wrap">
-            <button class="button mobile-menu__button js-modal-btn js-modal-btn-buy" type="button">
-                <span class="header__button-text">Buy now</span>
-                <span>
-                    <svg class="header__button-icon">
-                        <use href="images/icons.svg#vector-icon"></use>
-                    </svg>
-                </span>
-            </button>
-        </div>
-        <nav class="navigation mobile-menu__navigation">
-            <ul class="mobile-menu__list">
-                <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#header-fix" close-link-first>Home</a></li>
-                <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#advantages" close-link-second>About us</a></li>
-                <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#about" close-link-third>How it’s made?</a></li>
-                <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#products" close-link-fourth>Our products</a></li>
-                <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#contacts" close-link-fifth>Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+  </div>
 </header>
