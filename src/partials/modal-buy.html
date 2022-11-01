@@ -1,0 +1,63 @@
+<div class="backdrop backdrop--hidden js-modal-buy">
+    <div class="modal buy-modal">
+        <p class="title modal__title">Ice Cream order form</p>
+        <p class="buy-modal__description">Please fill in your information and we`ll be sending your order in no time</p>
+        <button class="button-close modal__button-close js-modal-btn js-modal-btn-buy" type="button">
+            <svg class="button-close__icon" width="11" height="11">
+                <use href="./images/icons.svg#close-menu-button-icon"></use>
+            </svg>
+        </button>
+        <form class="buy-form"
+            onsubmit="document.querySelector('.buy-form__success-message').textContent = 'Your order is booked!';"
+            target="formFrame">
+            <iframe name="formFrame" style="display:none;"></iframe>
+            <div class="buy-form__name">
+                <p class="buy-form__text">Name</p>
+                <input class="buy-form__input" type="text" name="first-name" placeholder="First Name" required
+                    minlength="2">
+                <input class="buy-form__input" type="text" name="last-name" placeholder="Last Name" required
+                    minlength="2">
+            </div>
+            <div class=" buy-form__phone">
+                <p class="buy-form__text">Phone</p>
+                <input class="buy-form__input" type="tel" name="phone" required minlength="9">
+            </div>
+            <div class="buy-form__email">
+                <p class="buy-form__text">E-mail</p>
+                <input class="buy-form__input" type="email" name="email">
+            </div>
+            <div class="buy-form__address">
+                <p class="buy-form__text">Shipping Address</p>
+                <input class="buy-form__input" type="text" name="street" placeholder="Street Address" required
+                    minlength="2">
+                <input class="buy-form__input" type="text" name="city" placeholder="City" required minlength="2">
+                <input class="buy-form__input" type="text" name="country" placeholder="Country" required minlength="2">
+            </div>
+            <div class="buy-form__product">
+                <p class="buy-form__text">Select your products</p>
+                <div class="buy-form__product-wrapper">
+                    <label class="buy-form__product-item">
+                        <input class="buy-form__quantity" type="number" name="ice-cream-quantity" required min="1"
+                            max="150" value="">
+                        Ice Cream
+                    </label>
+                    <label class="buy-form__product-item">
+                        <input class="buy-form__quantity" type="number" name="ice-coffee-quantity" required min="1"
+                            max="150" value="">
+                        Ice Coffee
+                    </label>
+                    <label class="buy-form__product-item">
+                        <input class="buy-form__quantity" type="number" name="milk-shakes-quantity" required min="1"
+                            max="150" value="">
+                        Milk Shakes
+                    </label>
+                </div>
+            </div>
+            <button class="button button--dark modal__button" type="submit">
+                Purchase
+            </button>
+            <div class="buy-form__success-message"></div>
+        </form>
+
+    </div>
+</div>
