@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
+  "name": "school-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Darymee.g```ithub.io/devs-ua",
+  "homepage": "https://Pupsikk.g```ithub.io/school-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /devs-ua/"
+    "build": "parcel build src/*.html --public-url /school-project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/goitacademy/school-project.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/goitacademy/school-project/issues"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
