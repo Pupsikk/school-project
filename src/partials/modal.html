@@ -20,73 +20,33 @@
             </div>
 
 
-            <label class="modal-label" for="product">What do you like to order?</label>
-            <div class="input-wrap">
-                <select class="select-product" name="product" id="product" >
+            <!-- <table id="table-price-box" class="total-product">
+                <tr><td>Cold Drinks<td>Amount<td>Price<td>total</tr>
+                <tr><td class="modal-label">Ice cream<td><input name="name" id="modal-name" class="modal-input-product" type="number"><td class="price">35<td class="sum"></tr>
+                <tr><td class="modal-label">Ice coffee<td><input name="name" id="modal-name" class="modal-input-product" type="number"><td class="price">35<td class="sum"></tr>
+                <tr><td class="modal-label">Milkshake<td><input name="name" id="modal-name" class="modal-input-product" type="number"><td class="price">35<td class="sum"></tr>
+                </table>
 
+                <p class="total-product">To pay  <span id="total">0</span> руб.</p> -->
 
-            <!-- <table class="table" id="basket">
-                <thead>
-                    <tr>
-                        <th>Название</th>
-                        <th class="text-end">Стоимость</th>
-                        <th>Количество</th>
-                        <th class="text-end">Подытог</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="basket__item">
-                        <td class="align-middle">Ice cream</td>
-                        <td class="align-middle price text-end">47 руб.</td>
-                        <td class="align-middle count">
-                            <div class="input-group"> 
-                                <button type="button" class="btn btn-primary btn-minus">-</button>
-                                <input type="number" value="2" data-price="47" class="from-control input"/>
-                                <button type="button" btn btn-primary btn-plus>+</button>
-                            </div>
-                        </td>
-                        <td class="align-middle text-end subtotal">94 руб.</td>
-                    </tr>
-                    <tr class="basket__item">
-                        <td class="align-middle">Ice coffee</td>
-                        <td class="align-middle price text-end">34 руб.</td>
-                        <td class="align-middle count">
-                            <div class="input-group"> 
-                                <button type="button" class="btn btn-primary btn-minus">-</button>
-                                <input type="number" value="4" data-price="34" class="from-control input"/>
-                                <button type="button" btn btn-primary btn-plus>+</button>
-                            </div>
-                        </td>
-                        <td class="align-middle text-end subtotal">136 руб.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="total-price fw-bold text-end pr-2">Итого: <span id="total-price"></span> руб.</div> -->
-
-
-                    <option type="number" value="icecream" data-price="47" class="from-control input">Ice cream</option>
-                    <option type="number" value="icecoffee" data-price="37" class="from-control input">Ice coffee</option>
-                    <option type="number" value="milkshake" data-price="40" class="from-control input">Milkshake</option>
-                </select>
-            </div>
-            
-            <!-- <label class="modal-label" for="quantity">How many?</label>
-            <div class="input-wrap">
-                <input class="select-quantity" type="number" id="quantity" name="quantity" value="1" min="1">
-            </div>
-
-            <div class="total-price fw-bold text-end pr-2">Total: <span id="total-price"></span>руб.</div>
 
             <label class="comment-wrap">
                 <span class="modal-label">Comment</span>
                 <textarea name="modal-comment" class="modal-comment" placeholder="Anything extra?"></textarea>
-            </label> -->
+            </label>
 
-            
+            <table id="table-price-box" class="total-product">
+                <tr><td>Cold Drinks<td>Amount<td>Price<td>total</tr>
+                <tr><td class="modal-label">Ice cream<td><input name="name" id="modal-name" class="modal-input-product" type="number"><td class="price">35<td class="sum"></tr>
+                <tr><td class="modal-label">Ice coffee<td><input name="name" id="modal-name" class="modal-input-product" type="number"><td class="price">35<td class="sum"></tr>
+                <tr><td class="modal-label">Milkshake<td><input name="name" id="modal-name" class="modal-input-product" type="number"><td class="price">35<td class="sum"></tr>
+                </table>
+
+                <p class="total-product">To pay  <span id="total">0</span> руб.</p>
+
             <ul>
-                <li >
-                    <a class="modal-button" href="./buy-product.html">Submit</a>
+                <li>
+                    <a class="modal-button" href="./buy-product.html">PAY</a>
                 </li>
             </ul>
         </form>

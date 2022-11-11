@@ -188,3 +188,41 @@
 ::placeholder {
     color: var(--white-color);
 }
+
+.modal-label-product {
+    display: block;
+    margin-bottom: 4px;
+
+    color: var(--button-white);
+}
+
+.total-product {
+    display: block;
+    margin-bottom: 4px;
+
+    color: var(--button-white);
+}
+
+.modal-input-product {
+    padding: 12px 14px;
+
+    width: 60%;
+    height: 18px;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+
+    color: var(--white-color);
+    background-color: transparent;
+    transition: border 300ms linear;
+
+    &:focus {
+        border: 1px solid var(--accent-color);
+        outline: none;
+        box-shadow: 2px 1px 10px 1px rgba(185, 152, 152, 0.75) inset;
+    }
+}
+
+.total-product-table {
+    margin-bottom: 20px;
+}
+

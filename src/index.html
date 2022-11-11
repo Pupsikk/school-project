@@ -79,4 +79,38 @@
       slidesToScroll: 1,
     });
   </script>
+
+<script>
+function calculateSum(inp,tr ) {
+ if (inp.tagName === "INPUT") {
+    tr.querySelector(".sum").textContent = tr.querySelector(".price").textContent * inp.value;
+  }
+}
+
+function changePrice(inp, tr) {
+   tr.querySelector(".price").textContent = parseInt(inp.value) <= 50 ? 35 : 70;
+}
+
+function total() {
+  table = document.getElementById('table-price-box').getElementsByTagName('tr');
+  var sum = 0;
+  for(var i = 0; i < table.length; i++) {
+    if(table[i].querySelector('.sum') && table[i].querySelector('.sum').textContent) {
+      sum +=parseInt(table[i].querySelector('.sum').textContent);
+    }
+   
+   
+  }
+  
+  return sum;
+}
+
+document.getElementById("table-price-box").addEventListener("input", function (e) {
+  var inp = e.target;
+  var tr = inp.parentElement.parentElement;
+  changePrice(inp, tr);
+  calculateSum(inp, tr);
+  document.getElementById("total").textContent = total();
+});
+  </script>
 </html>
