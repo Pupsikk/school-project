@@ -200,20 +200,20 @@
   text-transform: uppercase;
   color: var(--accent-color);
   @media screen and (max-width: 767px) {
-    animation: heartbeat;
-    animation-iteration-count: 3;
-    animation-duration: 2000ms;
-    @keyframes heartbeat {
-      0% {
-        transform: scale(1);
-      }
-      20% {
-        transform: scale(1.2) translateX(5%) translateY(5%);
-      }
-      40% {
-        transform: scale(1.4) translateX(9%) translateY(10%);
-      }
-    }
+    // animation: heartbeat;
+    // animation-iteration-count: 3;
+    // animation-duration: 2000ms;
+    // @keyframes heartbeat {
+    //   0% {
+    //     transform: scale(1);
+    //   }
+    //   20% {
+    //     transform: scale(1.2) translateX(5%) translateY(5%);
+    //   }
+    //   40% {
+    //     transform: scale(1.4) translateX(9%) translateY(10%);
+    //   }
+    // }
   }
   @media screen and (min-width: 768px) {
     width: 162px;
